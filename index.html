@@ -138,27 +138,68 @@
 </section>
 
 
-<!-- Trust (Premium) -->
-<section class="py-12 bg-gradient-to-b from-slate-950 to-slate-900 border-y border-white/10">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-6">
-    <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
-      <div class="text-3xl font-extrabold text-amber-300">15+ Jahre</div>
-      <div class="text-slate-300 mt-1">Erfahrung im Ruhrgebiet/NRW</div>
+<!-- Trust (Premium – mehr Tiefe + neue Inhalte) -->
+<section class="relative py-14 bg-slate-950 border-y border-white/10 overflow-hidden">
+  <!-- Background FX -->
+  <div class="absolute inset-0">
+    <!-- weiche Farbflächen -->
+    <div class="absolute -top-32 -left-24 w-[520px] h-[520px] rounded-full bg-blue-500/12 blur-3xl"></div>
+    <div class="absolute -bottom-40 -right-24 w-[560px] h-[560px] rounded-full bg-amber-400/10 blur-3xl"></div>
+    <!-- feines Grid / Noise 느낌 -->
+    <div class="absolute inset-0 opacity-[0.08]"
+         style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.9) 1px, transparent 0); background-size: 24px 24px;">
     </div>
-    <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
-      <div class="text-3xl font-extrabold text-amber-300">50.000 m²</div>
-      <div class="text-slate-300 mt-1">Gerüstmaterial verfügbar</div>
-    </div>
-    <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
-      <div class="text-3xl font-extrabold text-amber-300">Eigener</div>
-      <div class="text-slate-300 mt-1">Fuhrpark · Kran · Hebebühnen</div>
-    </div>
-    <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
-      <div class="text-3xl font-extrabold text-amber-300">Meister-</div>
-      <div class="text-slate-300 mt-1">Ausbildungsbetrieb & Innung</div>
+    <!-- Verlauf für Tiefe -->
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/80 to-slate-950"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4">
+    <div class="grid md:grid-cols-4 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="group rounded-3xl p-6 border border-white/10 bg-white/[0.04] backdrop-blur
+                  shadow-[0_20px_60px_rgba(0,0,0,0.35)] hover:border-amber-300/40 transition">
+        <div class="text-4xl font-extrabold text-amber-300 leading-none">25+</div>
+        <div class="mt-2 text-lg font-bold">Jahre Erfahrung</div>
+        <div class="mt-1 text-slate-300">im Ruhrgebiet & NRW</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group rounded-3xl p-6 border border-white/10 bg-white/[0.04] backdrop-blur
+                  shadow-[0_20px_60px_rgba(0,0,0,0.35)] hover:border-amber-300/40 transition">
+        <div class="text-4xl font-extrabold text-amber-300 leading-none">50.000 m²</div>
+        <div class="mt-2 text-lg font-bold">Gerüstmaterial</div>
+        <div class="mt-1 text-slate-300">kurzfristig verfügbar</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group rounded-3xl p-6 border border-white/10 bg-white/[0.04] backdrop-blur
+                  shadow-[0_20px_60px_rgba(0,0,0,0.35)] hover:border-amber-300/40 transition">
+        <div class="text-4xl font-extrabold text-amber-300 leading-none">Eigener</div>
+        <div class="mt-2 text-lg font-bold">Fuhrpark & Geräte</div>
+        <div class="mt-2 flex flex-wrap gap-2 text-xs text-slate-200">
+          <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">LKW & Anhänger</span>
+          <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Mobilkran</span>
+          <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Hebebühnen</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="group rounded-3xl p-6 border border-white/10 bg-white/[0.04] backdrop-blur
+                  shadow-[0_20px_60px_rgba(0,0,0,0.35)] hover:border-amber-300/40 transition">
+        <div class="text-4xl font-extrabold text-amber-300 leading-none">Meister-</div>
+        <div class="mt-2 text-lg font-bold">Ausbildungsbetrieb</div>
+        <div class="mt-2 flex flex-wrap gap-2 text-xs text-slate-200">
+          <span class="px-2.5 py-1 rounded-full bg-amber-400/10 border border-amber-300/25 text-amber-200">Meisterbetrieb</span>
+          <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Ausbildung</span>
+          <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10">Innung</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- Leistungen (Premium + Akkordeon) -->
 <section id="leistungen" class="py-20 bg-slate-950">
